@@ -1,6 +1,6 @@
 {
   "name": "desktop-notify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Linux desktop notification and sound when Claude Code asks for permission or finishes a response",
   "author": {
     "name": "nurof3n"
