@@ -1,0 +1,25 @@
+{
+  "description": "Desktop notification and sound when Claude Code asks for permission or finishes a response",
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/notify-handler.sh\" \"Claude needs permission approval\" /usr/share/sounds/freedesktop/stereo/message-new-instant.oga 100"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/notify-handler.sh\" \"Finished responding\" /usr/share/sounds/freedesktop/stereo/complete.oga 60"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "nurof3n",
+  "description": "Claude Code plugins by nurof3n",
+  "owner": {
+    "name": "nurof3n"
+  },
+  "plugins": [
+    {
+      "name": "desktop-notify",
+      "source": "./",
+      "description": "Linux desktop notification and sound when Claude Code asks for permission or finishes a response"
+    }
+  ]
+}
